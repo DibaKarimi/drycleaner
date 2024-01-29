@@ -1,0 +1,16 @@
+.container {
+    margin: auto;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 900px) {
+    .container {
+      padding: 20px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  }

@@ -1,0 +1,57 @@
+
+   [
+    {
+      "id": 1,
+      "name": "Wash",
+      "price": 13,
+      "discount": 10,
+      "introduction": "For everyday laundry, bedsheets and towels.",
+      "details": ["WASH" , "TUMBLE-DRY" , "IN A BAG"],
+      "image": "https://prod-cdn.laundryheap.com/images/static/price_services/mobile/wash_big.png"
+    },
+    {
+      "id": 2,
+      "name": "Wash and Iron",
+      "price": 8,
+      "discount": 0,
+      "introduction": " For everyday laundry that requires ironing.",
+      "details": ["WASH" , "TUMBLE-DRY" , "IRONING"],
+      "image":"https://prod-cdn.laundryheap.com/images/static/price_services/mobile/wash_and_iron_big.png"
+    },
+    {
+      "id": 3,
+      "name": "Dry Cleaning",
+      "price": 9,
+      "discount": 0,
+      "introduction": "For delicate items and fabrics.",
+      "details": ["DRY CLEANING" , "IRONING" ],
+       "image":"https://prod-cdn.laundryheap.com/images/static/price_services/mobile/dry_cleaning_big.png"
+    },
+    {
+      "id": 4,
+      "name": "Ironing",
+      "price": 5,
+      "discount": 0,
+      "introduction": "For items that are already clean.",
+      "details": ["IRONING", "ON HANGERS"],
+       "image":"https://prod-cdn.laundryheap.com/images/static/price_services/mobile/ironing_big.png"
+    },
+    {
+      "id": 5,
+      "name": "Duvets & Bulky Items",
+      "price": 10,
+      "discount": 0,
+      "introduction": "For larger items that require extra care. ",
+      "details": ["Custom cleaning"],
+       "image":"https://prod-cdn.laundryheap.com/images/static/price_services/mobile/duvets_bulky_items_big.png"
+    },
+    {
+      "id": 6,
+      "name": "Deal",
+      "price": 12,
+      "discount": 0,
+      "introduction": "Special offers.",
+      "details": [],
+       "image":"https://prod-cdn.laundryheap.com/images/static/price_services/mobile/deals_big.png"
+    } 
+  ]
