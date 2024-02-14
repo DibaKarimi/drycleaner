@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import styles from "./SigninPage.module.css"
 
 function SignupPage() {
   const [email, setEmail] = useState("");
@@ -22,8 +23,7 @@ function SignupPage() {
     if (data.status === "success") router.push("/signin");
   };
   return (
-      
-    <div className="signin-form">
+    <div className={styles.signin}>
       <h3>Registration Form</h3>
       <input
         type="text"
@@ -45,8 +45,8 @@ function SignupPage() {
       />
       <button onClick={signUpHandler}>Register</button>
       <div>
-        <p>Have an account?</p>
-        <Link  href="/signin">Sign in</Link>
+        <p>Have an account? </p>
+        <Link href="/signin"> Sign in</Link>
       </div>
     </div>
   );

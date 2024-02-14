@@ -1,6 +1,7 @@
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
+import styles from "./SigninPage.module.css";
 
 function SignIn() {
   const [email, setEmail] = useState("");
@@ -24,7 +25,7 @@ function SignIn() {
     if (!res.error) router.replace("./");
   };
   return (
-    <div>
+    <div className={styles.signin}>
       <h3>Login Form</h3>
       <input
         type="text"
