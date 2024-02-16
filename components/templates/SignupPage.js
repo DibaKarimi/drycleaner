@@ -19,7 +19,7 @@ function SignupPage() {
       body: JSON.stringify({ email,telephone, password }),
     });
     const data = await res.json();
-    console.log("data=========", data);
+
     if (data.status === "success") router.push("/signin");
   };
   return (

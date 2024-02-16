@@ -60,3 +60,7 @@
   cursor: pointer;
   max-width: 600px;
 }
+.signin span {
+  margin: 10px;
+  color: red;
+}

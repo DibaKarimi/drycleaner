@@ -7,7 +7,7 @@ async function handler(req, res) {
 
   if (req.method == "POST") {
     const { email, telephone, password } = req.body;
-    console.log("emailtelephonepassword", email, telephone, password);
+
     if (!email || !password || !telephone) {
       return res
         .status(422)
@@ -36,7 +36,6 @@ async function handler(req, res) {
       telephone: telephone,
       password: hashedPassword,
     });
-    console.log("newUser------", newUser);
 
     res.status(201).json({ status: "success", message: "created user" });
   }

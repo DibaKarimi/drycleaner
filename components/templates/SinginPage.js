@@ -6,10 +6,10 @@ import styles from "./SigninPage.module.css";
 function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [telephone, setTelephone] = useState("");
 
   const { data, status } = useSession();
-  console.log({ data, status });
+  const [errorMessage, setErrorMessage] = useState("");
+
   const router = useRouter();
 
   useEffect(() => {
@@ -23,6 +23,9 @@ function SignIn() {
       redirect: false,
     });
     if (!res.error) router.replace("./");
+    if (res.error) {
+      setErrorMessage(res.error);
+    }
   };
   return (
     <div className={styles.signin}>
@@ -40,6 +43,7 @@ function SignIn() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <button onClick={loginHandler}>Login</button>
+      <span>{errorMessage}</span>
     </div>
   );
 }
