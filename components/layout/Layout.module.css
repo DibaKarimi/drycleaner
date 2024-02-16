@@ -1,6 +1,6 @@
 .header {
   background-color:#3a5e27  ;
-  color: #53c60b;
+  color: aliceblue;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -39,4 +39,14 @@
   .header {
     padding: 10px;
   }
+}
+
+.logout{
+  background-color: #3a5e27;
+  color: aliceblue;
+ 
+  margin: 10px;
+  padding: 10px;
+  border: 0ch;
+  cursor: pointer;
 }

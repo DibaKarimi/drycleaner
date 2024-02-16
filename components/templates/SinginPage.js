@@ -13,7 +13,7 @@ function SignIn() {
   const router = useRouter();
 
   useEffect(() => {
-    if (status === "authenticated") router.replace("./");
+    if (status === "authenticated") router.replace("./services");
   }, [status]);
 
   const loginHandler = async () => {
@@ -32,12 +32,6 @@ function SignIn() {
         placeholder="Email"
         value={email}
         onChange={(e) => setEmail(e.target.value)}
-      />
-      <input
-        type="text"
-        placeholder="Telephone Number"
-        value={telephone}
-        onChange={(e) => setTelephone(e.target.value)}
       />
       <input
         type="password"

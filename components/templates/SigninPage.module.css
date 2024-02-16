@@ -41,16 +41,16 @@
   margin-top: 5px;
   background-color: #fff;
   color: #7f7e86;
-  font-size: 1rem;
+  font-size: 0.9rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   padding: 5px 15px;
   height: 35px;
   outline: none;
-  max-width: 500px;
+  max-width: 600px;
 }
 .signin button {
   border: none;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   display: flex;
   align-items: center;
   background-color: #d6d6d6;
@@ -58,4 +58,5 @@
   padding: 5px 20px;
   border-radius: 10px;
   cursor: pointer;
+  max-width: 600px;
 }

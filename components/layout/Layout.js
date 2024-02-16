@@ -1,7 +1,12 @@
-import Link from "next/link"
-import styles from "./Layout.module.css"
+import Link from "next/link";
+import styles from "./Layout.module.css";
+import { signOut, useSession } from "next-auth/react";
 
-function Layout({children}) {
+function Layout({ children }) {
+  const { status } = useSession();
+  const logOutHandler = () => {
+    signOut();
+  };
   return (
     <>
       <header className={styles.header}>
@@ -12,8 +17,12 @@ function Layout({children}) {
           <Link href="/">HOME</Link>
           <Link href="/services">SERVICES</Link>
           <Link href="/aboutus">ABOUT US</Link>
-
-          <Link href="/login">LOGIN</Link>
+          {status === "authenticated" ? (
+            <a className={styles.logout} onClick={logOutHandler}> Log out</a>
+          ) : null}
+          {status === "unauthenticated" ? (
+            <Link href="/signin">LOGIN</Link>
+          ) : null}
         </div>
       </header>
       <div className={styles.container}>{children}</div>
@@ -24,4 +33,4 @@ function Layout({children}) {
   );
 }
 
-export default Layout
+export default Layout;
