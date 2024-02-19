@@ -18,7 +18,10 @@ function Layout({ children }) {
           <Link href="/services">SERVICES</Link>
           <Link href="/aboutus">ABOUT US</Link>
           {status === "authenticated" ? (
-            <a className={styles.logout} onClick={logOutHandler}> Log out</a>
+            <a className={styles.logout} onClick={logOutHandler}>
+              {" "}
+              Log out
+            </a>
           ) : null}
           {status === "unauthenticated" ? (
             <Link href="/signin">LOGIN</Link>
@@ -27,7 +30,7 @@ function Layout({ children }) {
       </header>
       <div className={styles.container}>{children}</div>
       <footer className={styles.footer}>
-        <div>Footer</div>
+        <div></div>
       </footer>
     </>
   );
