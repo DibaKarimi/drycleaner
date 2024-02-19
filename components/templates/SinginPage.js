@@ -22,7 +22,7 @@ function SignIn() {
       password,
       redirect: false,
     });
-    if (!res.error) router.replace("./");
+    if (!res.error) router.replace("/services");
     if (res.error) {
       setErrorMessage(res.error);
     }

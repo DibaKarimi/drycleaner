@@ -20,7 +20,7 @@ function SignupPage() {
     });
     const data = await res.json();
 
-    if (data.status === "success") router.push("/signin");
+    if (data.status === "success") router.push("/");
   };
   return (
     <div className={styles.signin}>

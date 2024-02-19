@@ -31,6 +31,7 @@ const authOptins = {
       },
     }),
   ],
+  secret: "58d7e669e3d124839583265911e3e3fd47c61ead",
 };
 
 export default NextAuth(authOptins);
