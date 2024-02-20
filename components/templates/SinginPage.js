@@ -14,7 +14,7 @@ function SignIn() {
   const router = useRouter();
 
   useEffect(() => {
-    if (status === "authenticated") router.replace("./services");
+    if (status === "authenticated") router.replace("/services");
   }, [status]);
 
   const loginHandler = async () => {
@@ -46,7 +46,7 @@ function SignIn() {
       <button onClick={loginHandler}>Login</button>
       <span>{errorMessage}</span>
       <div className="m-4">
-        <p>Have an account? </p>
+        <p>Don't have an account yet?? </p>
         <Link href="/signup"> Sign up</Link>
       </div>
     </div>
