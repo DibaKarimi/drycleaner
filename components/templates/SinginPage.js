@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { signIn, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
@@ -44,6 +45,10 @@ function SignIn() {
       />
       <button onClick={loginHandler}>Login</button>
       <span>{errorMessage}</span>
+      <div className="m-4">
+        <p>Have an account? </p>
+        <Link href="/signup"> Sign up</Link>
+      </div>
     </div>
   );
 }
