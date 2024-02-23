@@ -1,7 +1,7 @@
-import Signin from "../../components/templates/SinginPage";
+import SignIn from "../../components/templates/SinginPage";
 
-function signin() {
-  return <SigninPage />;
+function Signin() {
+  return <SignIn />;
 }
 
 export default Signin;

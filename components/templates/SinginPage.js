@@ -23,7 +23,7 @@ function SignIn() {
       password,
       redirect: false,
     });
-    if (!res.error) router.replace("/services");
+
     if (res.error) {
       setErrorMessage(res.error);
     }
@@ -46,7 +46,7 @@ function SignIn() {
       <button onClick={loginHandler}>Login</button>
       <span>{errorMessage}</span>
       <div className="m-4">
-        <p>Don't have an account yet?? </p>
+        <p className="m-2">Don't have an account yet? </p>
         <Link href="/signup"> Sign up</Link>
       </div>
     </div>
