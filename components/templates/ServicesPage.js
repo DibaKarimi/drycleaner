@@ -1,7 +1,7 @@
 import styles from "./ServicesPage.module.css";
 import Card from "../modules/Card"
 
-function Services({ data }) {
+function ServicesPage({ data }) {
   return (
     <div className={styles.container}>
       <h2>Services</h2>
@@ -14,4 +14,4 @@ function Services({ data }) {
   );
 }
 
-export default Services;
+export default ServicesPage;

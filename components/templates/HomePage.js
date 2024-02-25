@@ -1,14 +1,14 @@
 import styles from "./HomePage.module.css"
 import Banner from "../modules/Banner";
-import Services from "../modules/Services"
+import Categories from "../modules/categories";
 
 function HomePage() {
   return (
-      <div className={styles.container}>  
+    <div className={styles.container}>
       <Banner />
-      <Services/>
+      <Categories/>
     </div>
-  )
+  );
 }
 
 export default HomePage

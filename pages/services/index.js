@@ -2,8 +2,8 @@ import ServicesPage from "../../components/templates/ServicesPage";
 import ServicesData from "../../data.json";
 import { getSession } from "next-auth/react";
 
-function Services({ data }) {
-  return <ServicesPage data={data} />;
+function Services() {
+  return <ServicesPage data={ServicesData} />;
 }
 
 export default Services;
@@ -24,5 +24,5 @@ export async function getServerSideProps({ req }) {
       },
     };
   }
-  return { props: { data: ServicesData, session } };
+  return { props: { } };
 }

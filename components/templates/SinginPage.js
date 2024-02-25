@@ -14,7 +14,7 @@ function SignIn() {
   const router = useRouter();
 
   useEffect(() => {
-    if (status === "authenticated") router.replace("/services");
+    if (status === "authenticated") router.push("/services");
   }, [status]);
 
   const loginHandler = async () => {
