@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
-import styles from "./SigninPage.module.css"
+import styles from "./SigninPage.module.css";
+//import { useSession } from "next-auth/react";
 
 function SignupPage() {
   const [email, setEmail] = useState("");
@@ -9,6 +10,11 @@ function SignupPage() {
   const [telephone, setTelephone] = useState("");
 
   const router = useRouter();
+  // const { status } = useSession();
+
+  //  useEffect(() => {
+  //    if (status === "authenticated") router.push("/");
+  //  }, [status]);
 
   const signUpHandler = async () => {
     const res = await fetch("/api/auth/signup ", {
@@ -20,7 +26,7 @@ function SignupPage() {
     });
     const data = await res.json();
 
-    if (data.status === "success") router.push("/");
+    if (data.status === "success") router.push("/services");
   };
   return (
     <div className={styles.signin}>
