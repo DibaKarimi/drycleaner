@@ -24,7 +24,7 @@ function Layout({ children }) {
             </a>
           ) : null}
           {status === "unauthenticated" ? (
-            <Link href="/signin">LOGIN</Link>
+            <Link href="/signin">Log in</Link>
           ) : null}
         </div>
       </header>
